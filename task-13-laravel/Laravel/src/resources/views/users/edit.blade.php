@@ -13,7 +13,7 @@
     </div>
 
     
-    <form action="{{ route('users.update',$host->id) }}" method="POST">
+    <form action="{{ route('users.update',$user->id) }}" method="POST">
         @csrf
         @method('PUT')
 
@@ -21,13 +21,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $host->name }}" class="form-control" placeholder="Name">
+                    <input type="text" name="name" value="{{ $user->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Email:</strong>
-                    <textarea class="form-control" style="height:150px" name="email" placeholder="Detail">{{ $host->detail }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="email" placeholder="Detail">{{ $user->email }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

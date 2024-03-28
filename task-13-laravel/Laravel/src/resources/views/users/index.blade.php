@@ -29,7 +29,7 @@
         <tr>
             <td>{{ $host->id }}</td>
             <td>{{ $host->name }}</td>
-            <td>{{ $host->detail }}</td>
+            <td>{{ $host->email }}</td>
             <td>
                 <form action="{{ route('users.destroy',$host->id) }}" method="POST">
                     <a class="btn btn-info" href="{{ route('users.show',$host->id) }}">Show</a>
